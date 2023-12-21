@@ -1,0 +1,156 @@
+.carrossel__título {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}    
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.imagem__estrelinhas {
+    margin-bottom: 0.5em;
+}
+
+.descrição__título {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descrição__subtítulo {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descrição__texto {
+    font-size: 14px;
+    color: #000000D9;
+    padding: 0 1em 0 0;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões {
+    display: flex;
+}
+
+.botões__item {
+    margin: 0 0.5em;
+}
+
+.botões__ancora {
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__título {
+        padding: 1.7em 0 1em 0;
+    }
+
+    .carrossel__título {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+    display: block;
+    top: 63%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+
+    .descrição__subtítulo {
+        margin: 1em 0;
+    }
+
+    .descrição {
+        padding-right: 2em;
+    }
+
+    .botões__ancora:hover {
+        color: var(--laranja);
+        background-color: var(--azul);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 2em 13vw 6.5em 13vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0;
+    }
+
+    .card {
+        width: 60%;
+        margin: 5em 0 0 5.5em;
+    }
+
+    .descrição {
+        margin-right: 2em;
+    }
+
+    .descrição__título {
+        font-size: 32px;
+    }
+
+    .descrição__texto {
+        font-size: 16px;
+    }
+
+    .card__botões {
+        padding-top: 1em;
+    }
+}
